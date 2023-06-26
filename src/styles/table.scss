@@ -1,0 +1,22 @@
+@import './variables';
+
+table {
+  border: 3px solid $background-gradient;
+  width: 80%;
+  thead {
+    &:after {
+      content: "";
+      display: block;
+      height: 1.5em;
+      width: 100%;
+      background: transparent;
+    }
+  }
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background: $background-gradient;
+      }
+    }
+  }
+}
